@@ -1,0 +1,101 @@
+/* BAREBONES OVERRIDES */
+
+.grid-container {
+  text-align: left;
+}
+.grid-container .one.column {
+  grid-column: span 1;
+}
+.grid-container .two.columns {
+  grid-column: span 2;
+}
+.grid-container .three.columns {
+  grid-column: span 3;
+}
+.grid-container .four.columns {
+  grid-column: span 4;
+}
+
+/* THEMING */
+
+html {
+  --theme-hue: 115;
+  --accent-hue: 34;
+}
+
+/* CUSTOM STYLES */
+
+.resume {
+  padding-top: calc(1em - 0.5rem);
+}
+
+.subhead {
+  position: relative;
+}
+.subhead::before {
+  position: absolute;
+  content: "";
+  background-color: var(--background-color-softer);
+  width: calc(97% - 20px);
+  top: 18px;
+  right: 0;
+  bottom: 0;
+  left: 12px;
+  z-index: -1;
+  transform: skew(-26deg);
+}
+h4 {
+  letter-spacing: 0.1em;
+  word-spacing: 0.2em;
+  color: white;
+  font-weight: 700;
+  background-color: var(--accent-color);
+  padding: 0.1em 0.5em;
+}
+li {
+  list-style-position: outside;
+}
+.section-list {
+  list-style: none;
+}
+.job-title {
+  font-weight: bold;
+  margin-bottom: 0.1em;
+  position: relative;
+}
+.job-title + p {
+  margin-bottom: 0.2em;
+}
+.dates {
+  font-weight: bold;
+  color: var(--accent-color);
+}
+.job-title::before {
+  position: absolute;
+  content: "";
+  background-color: var(--background-color-softer);
+  width: calc(97% - 20px);
+  top: 18px;
+  right: 0;
+  bottom: 0;
+  left: 12px;
+  z-index: -1;
+  transform: skew(-26deg);
+}
+.employer {
+  font-style: italic;
+}
+.employer::after {
+  content: "\00A0\2192\00A0";
+}
+.top-list {
+  padding-left: 2em;
+}
+.sidebar {
+  background-color: var(--background-color-softer);
+  padding: 1em 0.5em;
+}
+
+.copyright {
+  color: var(--text-color-softer);
+}
