@@ -19,14 +19,14 @@
 /* THEMING */
 
 html {
-  --theme-hue: 115;
+  --theme-hue: 184;
   --accent-hue: 34;
 }
 
 /* CUSTOM STYLES */
 
 .resume {
-  padding-top: calc(1em - 0.5rem);
+  padding-top: 1em;
 }
 
 .subhead {
@@ -67,8 +67,8 @@ li {
   margin-bottom: 0.2em;
 }
 .dates {
-  font-weight: bold;
-  color: var(--accent-color);
+  font-style: italic;
+  color: var(--text-color-softer);
 }
 .job-title::before {
   position: absolute;
@@ -83,19 +83,53 @@ li {
   transform: skew(-26deg);
 }
 .employer {
-  font-style: italic;
+  font-weight: bold;
 }
 .employer::after {
   content: "\00A0\2192\00A0";
+}
+.employer svg {
+  transform: translateY(0.5rem);
+}
+.styled-link {
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 var(--accent-color);
+  color: var(--accent-color);
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.styled-link:hover {
+  box-shadow: inset 200px 0 0 0 var(--accent-color);
+  color: white;
 }
 .top-list {
   padding-left: 2em;
 }
 .sidebar {
   background-color: var(--background-color-softer);
-  padding: 1em 0.5em;
+  padding: 1em;
+}
+.sidebar ul {
+  margin-inline-start: 2rem;
+}
+
+.supplemental {
+  font-size: 0.8em;
+  margin-top: 0;
 }
 
 .copyright {
   color: var(--text-color-softer);
+}
+
+/* UTILITIES */
+.u-mbe-0 {
+  margin-block-end: 0;
+}
+.u-mbe-1 {
+  margin-block-end: 0.25em;
+}
+.u-mbe-2 {
+  margin-block-end: 1em;
 }
