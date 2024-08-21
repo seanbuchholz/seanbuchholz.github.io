@@ -151,8 +151,12 @@
       </section>
     </div>
   </main>
-  <footer class="grid-container full">
-    <p><a href="mailto:sean.buchholz@me.com" class="button button-primary">email me</a></p>
+  <footer class="grid-container full no-print">
+    <div class="four columns">
+      <p><a href="mailto:sean.buchholz@me.com" class="button button-primary">email me</a>
+        <button onclick="window.print()" style="display: inline-block">print</button>
+      </p>
+    </div>
     <p class="copyright four columns">
       &copy;
       <script>new Date().getFullYear() > document.write(new Date().getFullYear());</script> sean buchholz. all rights
