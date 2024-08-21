@@ -55,6 +55,9 @@ h4 {
 li {
   list-style-position: outside;
 }
+section h4 + * {
+  padding-inline-start: 1em;
+}
 .section-list {
   list-style: none;
 }
