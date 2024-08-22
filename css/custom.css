@@ -116,6 +116,9 @@ section h4 + * {
 .sidebar ul {
   margin-inline-start: 2rem;
 }
+.sidebar h5 {
+  border-bottom: solid 2px var(--accent-color);
+}
 
 .supplemental {
   font-size: 0.8em;
