@@ -23,6 +23,15 @@ html {
   --accent-hue: 34;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bitter", serif;
+}
+
 /* CUSTOM STYLES */
 
 .resume {
@@ -45,10 +54,10 @@ html {
   transform: skew(-26deg);
 }
 h4 {
-  letter-spacing: 0.1em;
-  word-spacing: 0.2em;
+  letter-spacing: 0.025em;
+  word-spacing: 0.025em;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   background-color: var(--accent-color);
   padding: 0.1em 0.5em;
 }
