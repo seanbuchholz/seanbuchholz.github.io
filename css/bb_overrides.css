@@ -1,0 +1,23 @@
+/* BAREBONES OVERRIDES */
+
+.grid-container {
+  text-align: left;
+}
+.grid-container .one.column {
+  grid-column: span 1;
+}
+.grid-container .two.columns {
+  grid-column: span 2;
+}
+.grid-container .three.columns {
+  grid-column: span 3;
+}
+.grid-container .four.columns {
+  grid-column: span 4;
+}
+.grid-container .five.columns {
+  grid-column: span 5;
+}
+.grid-container .six.columns {
+  grid-column: span 6;
+}

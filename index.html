@@ -9,6 +9,7 @@
   <title>Sean Buchholz, CSM</title>
   <meta name="description" content="">
   <meta name="author" content="">
+  <meta name="color-scheme" content="light dark" />
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -29,7 +30,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/barebones.css">
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/bb_overrides.css">
+  <link id="pageStyle" rel="stylesheet" href="css/default.css">
   <!-- <link rel="stylesheet" href="skeleton-legacy.css"> -->
 
   <!-- Favicon
@@ -39,9 +41,17 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
+  <!-- Scripts
+   ------------------------------------------------- -->
+  <script>
+    const swapStyles = (sheet) => {
+      const stylesheet = document.getElementById('pageStyle');
+      stylesheet.setAttribute('href', `./css/${sheet}.css`);
+    }
+  </script>
 </head>
 
-<body>
+<body class="page">
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -170,6 +180,14 @@
       <script>new Date().getFullYear() > document.write(new Date().getFullYear());</script> sean buchholz. all rights
       reserved.
     </p>
+    <div class="four columns">
+      <fieldset>
+        <legend>Just for Fun</legend>
+        <label>Default <input type="radio" name="styles" id="default" onChange="swapStyles('default')" checked></label>
+        <label>Classic RPG <input type="radio" name="styles" id="classic_rpg"
+            onChange="swapStyles('classic_rpg')"></label>
+      </fieldset>
+    </div>
   </footer>
 
   <!-- End Document
